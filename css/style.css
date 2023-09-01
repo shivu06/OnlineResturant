@@ -1,0 +1,334 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* for smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#logo{
+    width: 15px;
+    height: 30px;
+
+}
+
+/* this is to the image  */
+#logo img{
+    width: 40px;
+    height: 40px;
+    padding: 0px 12px;
+}
+
+
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+   
+}
+
+/* navi bar : logo &img */
+
+
+/* to items Bar styling */
+#navbar ul{
+    display: flex;
+    margin: 5px 15px;
+    padding: 0px 30px;    
+}
+
+/* to the li in the navbar */
+#navbar ul li{
+    list-style: none;
+}
+
+
+/* this is the aref in the navbar */
+#navbar ul li a{
+    list-style: none;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    padding: 7px 12px;
+    margin: 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* this is add color to only navbar background only */
+#navbar::before{
+        content: "";
+        background-color: rgb(19, 18, 18);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;  /* this helps to appear content on the background color */
+        opacity: 0.4;
+        padding: 5px 5px ;
+        
+    }
+    
+    /* this is done to add in navigation bar */
+
+
+#navbar ul li a:hover{
+    list-style: none;
+    color:rgb(255, 252, 252);
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+    background-color: black; 
+}
+/* *********************************************************************************** */
+
+
+
+/* this is to section of home  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+#home::before{
+    content: "";
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;  /* this helps to appear content on the background color */
+    opacity: 0.99;
+    padding: 5px 5px ;  
+}
+#home h1{
+    color: aliceblue;
+    padding: 8px 2px;
+    margin: 2px 2px;
+    font-size: 3.8rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#home p{
+    color: aliceblue;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.btn{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(182, 226, 58);
+    font-size: 17px;
+    
+}
+/* ****************************************************************** */
+
+
+
+
+/* To the services section */
+/* these boxes for the service section */
+#service-container{
+    background-color: rgb(255, 255, 255);
+}
+#service{
+    margin: 25px;
+    display: flex;
+    
+    
+}
+#service .box{
+    padding: 25px 15px;
+    margin: 5px 20px;
+    border-radius: 25px;
+    border: 2px solid brown;
+    background-color: rgb(234, 228, 203);
+    
+}
+#service .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+/* ************************************************************* */
+
+
+
+/* to the clients section */
+
+/* this is to hole section */
+#client-section{
+    position: relative;
+    
+}
+/* this is for div container having images */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to adjust images */
+#clients img{
+    height: 124px;
+    
+}
+.class-item{
+    padding: 36px  70px;
+   
+}
+
+/* to backgroung img */
+#client-section::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 100%;
+    opacity: 0.39;
+}
+/* ************************************88888888 */
+
+
+
+/* contact section */
+#contact{
+    /* display: flex; */
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    background-image: url('../img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* this is for the inputs and space btwn the form ele */
+#contact-box input,
+#contact-box textarea{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 8px;
+    margin: 7px 7px;
+    border-radius: 15px;
+}
+
+/* this for only contact box */
+#contact-box{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#contact-box form{
+    width: 50%;
+    padding: 6px;
+}
+#contact-box label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;    
+}
+
+.button{
+    background-color: black;
+    color: aliceblue;
+    padding: 4px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+.button:hover{
+    cursor: pointer;
+    background-color:rgb(143, 228, 143);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto; padding: 4px 30px;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+/* this is for the footer  */
+#center{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 7px;
+}
+
+
+
+
+/* ********************************* */
+
+/* utility classes */
+/* given all h1 h2 headings */
+.center{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.h-primary{
+    text-align: center;
+    font-size: 3.8rem;
+    padding: 10px 10px;
+    margin: 2px 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 5px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* end of utility classes */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0px 0px;
+            /* background-image: url(../img/bg1.jpg); */
+        }
+        header{
+            display: flex;
+            background-color: black;
+        }
+        header ul li{
+            list-style: none;
+        }
+        header ul{
+            display: flex;
+            margin: 15px 15px;
+            padding: 0px 50px;
+        }
+        header a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 12px 18px;
+            margin: 5px 5px;
+        }
+        header a:hover{
+            background-color: aliceblue;
+            text-decoration: none;
+            color: black;
+            padding: 12px 18px;
+            margin: 5px 5px;
+            border-radius: 10px;
+        }
+        header ul input{
+            position: absolute;
+            display: inline-block;
+            right: 25px;
+            border-radius: 25px;
+            text-align: center;
+            justify-content: center;
+            padding: 3px 5px;
+        }
+        header img{
+            width: 25px;
+            height: 5%;
+            margin: 10px 10px;    
+        }
+
+
+
+        .contain p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .contain h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <img src="../img/logo3.png" alt="no img">
+    <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Option</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <input type="search" name="search" id="search" placeholder="Search Bar">
+    </ul>
+   </header>
+   <section class="contain">
+    <h1> main heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab magni dignissimos, unde animi nostrum numquam corrupti ducimus, fugiat quasi cupiditate obcaecati id, facilis quidem earum quaerat saepe nam ad debitis eaque dicta odit!</p>
+   </section>
+</body>
+</html>
